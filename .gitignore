@@ -1,0 +1,8 @@
+.ipynb_checkpoints
+__pycache__
+.vscode
+build/
+*.mov
+*.mkv
+*.xcf
+lost+found

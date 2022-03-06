@@ -1,0 +1,66 @@
+\documentclass{article}
+\usepackage[paperwidth=3.0in, paperheight=2.005in, margin=0in]{geometry}
+\usepackage{tikz}
+
+\begin{document}
+\tikzstyle{boundline} = [draw, line width=.5, black]
+\tikzstyle{courtline} = [draw, line width=.5, black]
+\tikzstyle{textcolor} = [black]
+\tikzstyle{markercolor} = [black]
+
+\tikzstyle{linetext}  = [above, textcolor]
+\tikzstyle{walltext}  = [textcolor]
+\tikzstyle{ghostlines} = [densely dashed, line width=0.25ex, gray]
+\begin{tikzpicture}[scale=0.55]
+	\draw[courtline] (+3.20, +0.00, -4.26) -- (+3.20, +0.00, +0.00);
+	\draw[courtline] (+0.00, +0.00, -4.26) -- (+6.40, +0.00, -4.26);
+
+	\draw[courtline] (+0.00, +0.00, -2.61) -- (+1.60, +0.00, -2.61);
+	\draw[courtline] (+4.80, +0.00, -2.61) -- (+6.40, +0.00, -2.61);
+
+	\draw[courtline] (+1.60, +0.00, -4.26) -- (+1.60, +0.00, -2.61);
+	\draw[courtline] (+4.80, +0.00, -4.26) -- (+4.80, +0.00, -2.61);
+
+	\draw[courtline] (+0.00, +0.43, -9.75) -- (+6.40, +0.43, -9.75);
+	\draw[courtline] (+0.00, +1.78, -9.75) -- (+6.40, +1.78, -9.75);
+
+	\draw[boundline] (+0.00, +0.00, +0.00) -- (+0.00, +2.13, +0.00);
+	\draw[boundline] (+6.40, +0.00, +0.00) -- (+6.40, +2.13, +0.00);
+	\draw[boundline] (+6.40, +0.00, -9.75) -- (+6.40, +4.57, -9.75);
+	\draw[boundline] (+0.00, +0.00, -9.75) -- (+0.00, +4.57, -9.75);
+
+	\draw[boundline] (+0.00, +0.00, +0.00) -- (+6.40, +0.00, +0.00) -- (+6.40, +0.00, -9.75) -- (+0.00, +0.00, -9.75) -- cycle;	% floor
+	\draw[courtline] (+0.00, +2.13, +0.00) -- (+6.40, +2.13, +0.00) -- (+6.40, +4.57, -9.75) -- (+0.00, +4.57, -9.75) -- cycle;	% ceiling
+
+	\filldraw [markercolor] (+0.00,+0.00,+0.00) circle (2pt) node[anchor=north] {1};
+	\filldraw [markercolor] (+3.20,+0.00,+0.00) circle (2pt) node[anchor=north] {2};
+	\filldraw [markercolor] (+6.40,+0.00,+0.00) circle (2pt) node[anchor=north] {3};
+	\filldraw [markercolor] (+6.40,+0.00,-2.61) circle (2pt) node[anchor=north] {4};
+	\filldraw [markercolor] (+6.40,+0.00,-4.26) circle (2pt) node[anchor=north] {5};
+	\filldraw [markercolor] (+6.40,+0.00,-9.75) circle (2pt) node[anchor=north] {6};
+	\filldraw [markercolor] (+0.00,+0.00,-9.75) circle (2pt) node[anchor=north] {7};
+	\filldraw [markercolor] (+0.00,+0.00,-4.26) circle (2pt) node[anchor=north] {8};
+	\filldraw [markercolor] (+0.00,+0.00,-2.61) circle (2pt) node[anchor=north] {9};
+
+	\filldraw [markercolor] (+1.60,+0.00,-2.61) circle (2pt) node[anchor=north] {10};
+	\filldraw [markercolor] (+1.60,+0.00,-4.26) circle (2pt) node[anchor=north] {11};
+
+	\filldraw [markercolor] (+4.80,+0.00,-2.61) circle (2pt) node[anchor=north] {12};
+	\filldraw [markercolor] (+4.80,+0.00,-4.26) circle (2pt) node[anchor=south west] {13};
+
+	\filldraw [markercolor] (+3.20,+0.00,-4.26) circle (2pt) node[anchor=north] {14};
+
+	\filldraw [markercolor] (+0.00,+2.13,+0.00) circle (2pt) node[anchor=south east] {15};
+	\filldraw [markercolor] (+6.40,+2.13,+0.00) circle (2pt) node[anchor=south east] {16};
+	\filldraw [markercolor] (+6.40,+4.57,-9.75) circle (2pt) node[anchor=north west] {17};
+	\filldraw [markercolor] (+0.00,+4.57,-9.75) circle (2pt) node[anchor=north west] {18};
+
+	\filldraw [markercolor] (+0.00,+0.43,-9.75) circle (2pt) node[anchor=south west] {19};
+	\filldraw [markercolor] (+6.40,+0.43,-9.75) circle (2pt) node[anchor=south west] {20};
+
+	\filldraw [markercolor] (+0.00,+1.78,-9.75) circle (2pt) node[anchor=south west] {21};
+	\filldraw [markercolor] (+6.40,+1.78,-9.75) circle (2pt) node[anchor=south west] {22};
+
+\end{tikzpicture}
+
+\end{document}

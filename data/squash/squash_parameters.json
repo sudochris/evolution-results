@@ -1,0 +1,230 @@
+{
+    "name": "StandardSquashScene",
+    "description": "Standard Squash Scene",
+    "dna": [
+        {
+            "name": "fu",
+            "description": "Will be derived as max(width, height)-100",
+            "bounds": {
+                "low": 0,
+                "high": 900
+            },
+            "mutation": {
+                "low": -10,
+                "high": 10,
+                "probability": 0.05,
+                "distribution": "uniform"
+            }
+        },
+        {
+            "name": "fv",
+            "description": "Will be derived as max(width, height)-100",
+            "bounds": {
+                "low": 0,
+                "high": 900
+            },
+            "mutation": {
+                "low": -10,
+                "high": 10,
+                "probability": 0.05,
+                "distribution": "uniform"
+            }
+        },
+        {
+            "name": "cx",
+            "description": "X Principal point offset. Will be derived as floor(width/2) on [ cx += ???]",
+            "bounds": {
+                "low": 200,
+                "high": 600
+            },
+            "mutation": {
+                "low": -50,
+                "high": 50,
+                "probability": 0.05,
+                "distribution": "uniform"
+            }
+        },
+        {
+            "name": "cy",
+            "description": "Y Principal point offset. Will be derived as floor(height/2) on [ cy += ???]",
+            "bounds": {
+                "low": 100,
+                "high": 500
+            },
+            "mutation": {
+                "low": -50,
+                "high": 50,
+                "probability": 0.05,
+                "distribution": "uniform"
+            }
+        },
+        {
+            "name": "tx",
+            "bounds": {
+                "low": -3.20,
+                "high": 3.20
+            },
+            "mutation": {
+                "low": -0.1,
+                "high": 0.1,
+                "probability": 0.05,
+                "distribution": "normal",
+                "distribution_parameters": {
+                    "mu": 0,
+                    "sigma": 0.1
+                }
+            }
+        },
+        {
+            "name": "ty",
+            "bounds": {
+                "low": 1.00,
+                "high": 3.30
+            },
+            "mutation": {
+                "low": -0.15,
+                "high": 0.15,
+                "probability": 0.05,
+                "distribution": "normal",
+                "distribution_parameters": {
+                    "mu": 0,
+                    "sigma": 0.2
+                }
+            }
+        },
+        {
+            "name": "tz",
+            "bounds": {
+                "low": 5.40,
+                "high": 10.00
+            },
+            "mutation": {
+                "low": -0.5,
+                "high": 0.5,
+                "probability": 0.05,
+                "distribution": "lognormal",
+                "distribution_parameters": {
+                    "mu": 0,
+                    "sigma": 0.7,
+                    "offset": -1
+                }
+            }
+        },
+        {
+            "name": "rx",
+            "bounds": {
+                "low": -0.50,
+                "high": 0.50
+            },
+            "mutation": {
+                "low": -0.05,
+                "high": 0.05,
+                "probability": 0.05,
+                "distribution": "normal",
+                "distribution_parameters": {
+                    "mu": 0,
+                    "sigma": 0.05
+                }
+            }
+        },
+        {
+            "name": "ry",
+            "bounds": {
+                "low": -0.20,
+                "high": 0.20
+            },
+            "mutation": {
+                "low": -0.05,
+                "high": 0.05,
+                "probability": 0.05,
+                "distribution": "normal",
+                "distribution_parameters": {
+                    "mu": 0,
+                    "sigma": 0.01
+                }
+            }
+        },
+        {
+            "name": "rz",
+            "bounds": {
+                "low": -0.20,
+                "high": 0.20
+            },
+            "mutation": {
+                "low": -0.05,
+                "high": 0.05,
+                "probability": 0.05,
+                "distribution": "normal",
+                "distribution_parameters": {
+                    "mu": 0,
+                    "sigma": 0.01
+                }
+            }
+        },
+        {
+            "name": "d0",
+            "bounds": {
+                "low": -0.5,
+                "high": 0.5
+            },
+            "mutation": {
+                "low": -0.5,
+                "high": 0.5,
+                "probability": 0.01,
+                "distribution": "uniform"
+            }
+        },
+        {
+            "name": "d1",
+            "bounds": {
+                "low": -0.5,
+                "high": 0.5
+            },
+            "mutation": {
+                "low": -0.5,
+                "high": 0.5,
+                "probability": 0.01,
+                "distribution": "uniform"
+            }
+        },
+        {
+            "name": "d2",
+            "bounds": {
+                "low": -0.2,
+                "high": 0.2
+            },
+            "mutation": {
+                "low": -0.2,
+                "high": 0.2,
+                "probability": 0.01,
+                "distribution": "uniform"
+            }
+        },
+        {
+            "name": "d3",
+            "bounds": {
+                "low": -0.1,
+                "high": 0.1
+            },
+            "mutation": {
+                "low": -0.1,
+                "high": 0.1,
+                "probability": 0.01,
+                "distribution": "uniform"
+            }
+        },
+        {
+            "name": "d4",
+            "bounds": {
+                "low": -3.0,
+                "high": 3.0
+            },
+            "mutation": {
+                "low": -3.0,
+                "high": 3.0,
+                "probability": 0.01,
+                "distribution": "uniform"
+            }
+        }
+    ]
+}
